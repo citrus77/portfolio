@@ -1,7 +1,10 @@
+import { Navigation } from './components';
+
 const App = () => {
   return (
     <>
-      <div>hello</div>
+      <Navigation />
+      <div>Main</div>
     </>
   );
 };
