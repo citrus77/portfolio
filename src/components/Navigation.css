@@ -1,0 +1,6 @@
+#navigation{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
