@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 
 const MenuItem = ({ link, setPathName, toggle }) => {
@@ -6,10 +7,11 @@ const MenuItem = ({ link, setPathName, toggle }) => {
     const handleOnClick = () => {
         setPathName(name);
         toggle();
+        console.log('clicked')
     };
 
     return (
-        <NavLink onClick={handleOnClick} to={to}>{name}</NavLink>
+        <NavLink class='menu-item' onClick={handleOnClick} to={to}>{name}</NavLink>
     );
 };
 

@@ -1,0 +1,31 @@
+#menu {
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px;
+    position: fixed;
+    width: 8rem;
+    z-index: 2;
+}
+
+#menu a {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    width: 120%;
+}
+
+#menu a:hover {
+    background: red;
+    color: #fff;
+}
+
+.hidden {
+    margin-top: -9999px;
+    display: none;
+}

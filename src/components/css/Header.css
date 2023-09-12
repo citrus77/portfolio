@@ -1,6 +1,8 @@
-#menu {
-    align-items: center;
+header {
     display: flex;
+    flex: 2;
     flex-direction: column;
     justify-content: center;
+    height: 3.2rem;
+    width: 100%;
 }

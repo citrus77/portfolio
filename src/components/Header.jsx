@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import { Navigation } from '.';
-import './Header.css';
+import './css/Header.css';
 
 const Header = ({ setPathName,pathName, toggle }) => {
     return (

@@ -1,0 +1,15 @@
+#navigation{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#navigation button {
+    background: #fff;
+    border-radius: 20px;
+    padding: 8px;
+    text-decoration: none;
+    width: 8rem;
+    z-index: 1;
+}

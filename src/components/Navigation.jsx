@@ -1,6 +1,5 @@
-import { useEffect } from 'react';
 import { Menu } from '.';
-import './Navigation.css';
+import './css/Navigation.css';
 
 const Navigation = ({ setPathName, pathName, toggle }) => {
     const links = [
@@ -8,16 +7,10 @@ const Navigation = ({ setPathName, pathName, toggle }) => {
         { name: 'Projects', to: '/projects' }
     ];
 
-    useEffect(() => {
-        console.log(pathName)
-    }, [pathName]);
-
     return (
         <div id='navigation'>
-            <button onClick={toggle}>{pathName}</button>
-            <div id='menu-cont'>
-                <Menu links={links} setPathName={setPathName} toggle={toggle} />
-            </div>
+            <button onClick={toggle}>{pathName} ⤈</button>
+            <Menu links={links} setPathName={setPathName} toggle={toggle} />
         </div>
     );
 };
