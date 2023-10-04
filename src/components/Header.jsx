@@ -5,7 +5,7 @@ import './css/Header.css';
 const Header = ({ setPathName,pathName, toggle }) => {
     return (
         <header>
-            <h1>Header</h1>
+            <h1>Jason Lammers</h1>
             <Navigation setPathName={setPathName} pathName={pathName} toggle={toggle} />
         </header>
     );

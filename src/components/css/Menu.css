@@ -1,28 +1,31 @@
 #menu {
     align-items: center;
-    background: #fff;
+    background: #00bee1;
+    border: 1px solid #000000;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    padding: 8px;
     position: fixed;
     width: 8rem;
     z-index: 2;
 }
 
 #menu a {
-    color: #000;
+    color: #fff;
+    padding: 4px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     width: 120%;
 }
 
 #menu a:hover {
-    background: red;
-    color: #fff;
+    background: #bfffbc;
+    color: #000;
 }
 
 .hidden {

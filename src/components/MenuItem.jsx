@@ -7,11 +7,10 @@ const MenuItem = ({ link, setPathName, toggle }) => {
     const handleOnClick = () => {
         setPathName(name);
         toggle();
-        console.log('clicked')
     };
 
     return (
-        <NavLink class='menu-item' onClick={handleOnClick} to={to}>{name}</NavLink>
+        <NavLink className='menu-item' onClick={handleOnClick} to={to}>{name}</NavLink>
     );
 };
 
