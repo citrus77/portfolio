@@ -27,3 +27,7 @@
     margin: 6px;
     text-align: justify;
 }
+
+.edu p:last-child {
+    color: #000;
+}

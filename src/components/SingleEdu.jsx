@@ -21,7 +21,7 @@ const SingleEdu = ({ edu }) => {
             <p><i>{location}</i></p>
             <p>{startMonth} {startYear} - {endMonth} {endYear}</p>
             <br />
-            <p>{description}</p>
+            <p className='description'>{description}</p>
         </div>
     );
 };

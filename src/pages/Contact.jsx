@@ -13,7 +13,7 @@ const Contact = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     }, []);
 
     const { getAboutMe } = dataFns;
-    const { email, name, linkedIn, github, resumeLnk } = getAboutMe();
+    const { email, linkedIn, github, resumeLnk } = getAboutMe();
 
     return (
         <div id='contact'>

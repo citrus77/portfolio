@@ -15,6 +15,7 @@ const Projects = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     
     const { getProjects } = dataFns;
     const projects = getProjects();
+    
     return (
         <div id='projects'>
             {

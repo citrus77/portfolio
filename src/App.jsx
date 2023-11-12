@@ -23,7 +23,14 @@ const App = () => {
         background: `linear-gradient(to right, ${bgColor1}, ${bgColor2}`,
       }}
     >
-      <Header setPathName={setPathName} pathName={pathName} toggle={toggle} />
+      <Header
+        bgColor1={bgColor1}
+        bgColor2={bgColor2}
+        setPathName={setPathName}
+        pathName={pathName}
+        toggle={toggle}
+      />
+
       <Routes>
 
         <Route
@@ -45,7 +52,7 @@ const App = () => {
             setPathName={setPathName}
           />}
         />
-        
+
         <Route
           exact path='/contact'
           element={<Contact

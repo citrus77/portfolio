@@ -2,10 +2,15 @@
 import { Navigation } from '.';
 import './css/Header.css';
 
-const Header = ({ setPathName,pathName, toggle }) => {
+const Header = ({ bgColor1, bgColor2, setPathName, pathName, toggle }) => {
     return (
         <header>
-            <h1>Jason Lammers</h1>
+            <h1 style={
+                {
+                    textShadow: `-1px 1px 0px ${bgColor2},
+                    1px 1px 0px ${bgColor1}`
+                }
+            }>Jason Lammers</h1>
             <Navigation setPathName={setPathName} pathName={pathName} toggle={toggle} />
         </header>
     );
