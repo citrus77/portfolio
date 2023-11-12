@@ -14,7 +14,6 @@
 .edu h3 {
     margin: 6px;
     text-align: center;
-    width: 100%;
 }
 
 .edu img {
@@ -22,4 +21,9 @@
     margin: 6px;
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+.edu p {
+    margin: 6px;
+    text-align: justify;
 }

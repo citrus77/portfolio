@@ -1,14 +1,13 @@
 .card {
     align-items: center;
     background: #ffffff4b;
-    border: 1px solid #ffffffba;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin: 6px;
     justify-content: center;
     overflow: hidden;
-    width: 90%;
+    width: 98%;
 }
 
 .card img {
@@ -20,6 +19,6 @@
 .card span {
     align-items: center;
     flex: 1;
-    padding: 16px;
+    padding: 6px;
     text-align: justify;
 }

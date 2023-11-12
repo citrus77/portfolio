@@ -5,7 +5,8 @@ const Navigation = ({ setPathName, pathName, toggle }) => {
     const links = [
         { name: 'Home', to: '/' },
         { name: 'Projects', to: '/projects' },
-        { name: 'About', to: '/about'}
+        { name: 'About', to: '/about' },
+        { name: 'Contact', to: '/contact' }
     ];
 
     return (
