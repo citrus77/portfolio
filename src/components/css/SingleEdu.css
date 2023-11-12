@@ -1,0 +1,25 @@
+.edu {
+    align-items: center;
+    background: #ffffff2f;
+    border-radius: 20px;;
+    color: #fff;
+    display: flex;
+    margin: 6px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    text-align: justify;
+}
+
+.edu h3 {
+    margin: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+.edu img {
+    height: 48px;
+    margin: 6px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}

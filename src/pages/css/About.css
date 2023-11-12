@@ -1,0 +1,28 @@
+#about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about h2 {    
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #fff;
+    margin: 1rem;
+    padding: 6px;
+    text-align: justify;
+}
+
+.skills {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}

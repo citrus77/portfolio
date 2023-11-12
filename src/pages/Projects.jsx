@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react';
-import './css/Projects.css';
-import dataFns from '../components/dataFns';
 import { SingleProject } from '../components';
+import dataFns from '../dataFns';
+import './css/Projects.css';
 
 const Projects = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     useLayoutEffect(() => {

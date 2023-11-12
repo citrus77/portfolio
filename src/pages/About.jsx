@@ -1,6 +1,7 @@
 import { useLayoutEffect } from 'react';
 import { SingleEdu, SingleSkill } from '../components';
-import dataFns from '../components/dataFns';
+import dataFns from '../dataFns';
+import './css/About.css';
 
 const About = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     useLayoutEffect(() => {
@@ -18,9 +19,8 @@ const About = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     const skills = getSkills();
 
     return (
-        <div className='about'>
+        <div id='about'>
             <div className='description'>{description}</div>
-            <br />
             <br />
             <h2>Skills</h2>
             <div className='skills'>

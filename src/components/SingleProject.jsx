@@ -1,7 +1,7 @@
 import './css/SingleProject.css';
 
 const SingleProject = ({ projectData }) => {
-    const {contributors, description, github, imgUrl, project, url } = projectData;
+    const {contributors, description, github, imgSrc, project, url } = projectData;
 
     return (
         <div className='project card'>
@@ -13,7 +13,7 @@ const SingleProject = ({ projectData }) => {
             <div className='proj-content'>
                 <div>
                     <a href={url} target='_project'>
-                        <img src={imgUrl} alt={project} className='proj-img' />
+                        <img src={imgSrc} alt={project} className='proj-img' />
                     </a>
                 </div>
                 <div className='proj-desc'>
@@ -34,7 +34,6 @@ const SingleProject = ({ projectData }) => {
                     }
                 </div>
             </div>
-
         </div>
     );
 };
