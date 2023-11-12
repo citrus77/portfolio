@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Header } from './components';
-import { Home, Projects } from './pages'
+import { About, Home, Projects } from './pages'
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
@@ -26,6 +26,7 @@ const App = () => {
       <Header setPathName={setPathName} pathName={pathName} toggle={toggle} />
       <Routes>
         <Route exact path='/' element={ <Home bgColor1={bgColor1} setBgColor1={setBgColor1} setBgColor2={setBgColor2} setPathName={setPathName}/> } />
+        <Route exact path='/about' element={ <About bgColor1={bgColor1} setBgColor1={setBgColor1} setBgColor2={setBgColor2} setPathName={setPathName}/> } />
         <Route exact path='/projects' element={ <Projects bgColor1={bgColor1} setBgColor1={setBgColor1} setBgColor2={setBgColor2} setPathName={setPathName}/> } />
       </Routes>
     </div>

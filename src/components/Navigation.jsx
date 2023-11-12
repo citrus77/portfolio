@@ -4,7 +4,8 @@ import './css/Navigation.css';
 const Navigation = ({ setPathName, pathName, toggle }) => {
     const links = [
         { name: 'Home', to: '/' },
-        { name: 'Projects', to: '/projects' }
+        { name: 'Projects', to: '/projects' },
+        { name: 'About', to: '/about'}
     ];
 
     return (

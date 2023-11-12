@@ -2,26 +2,27 @@ import { useLayoutEffect } from 'react';
 import './css/Home.css';
 import './css/card.css';
 import profilePic from '../assets/img/profile.jpg';
-import { useLoaderData } from 'react-router';
 
 const Home = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     useLayoutEffect(() => {
         setBgColor1('#bfffbc');
-        setBgColor2('#00bee1');        
+        setBgColor2('#00bee1');
     }, [bgColor1]);
 
     useLayoutEffect(() => {
         setPathName('Home');
     }, []);
 
-    return <>
-        <div id='home'>
-            <div className='card'>
-                <img src={profilePic} className='profile-pic' height='300' width='300' />
-                <span>Hello! I am a Software Engineer specializing in Full-Stack Web Development. Check out my portfolio for some examples of my projects!</span>
+    return (
+        <>
+            <div id='home'>
+                <div className='card'>
+                    <img src={profilePic} className='profile-pic' height='300' width='300' />
+                    <span>Hello! I am a Software Engineer specializing in Full-Stack Web Development. Check out my portfolio for some examples of my projects!</span>
+                </div>
             </div>
-        </div>
-    </>;
+        </>
+    );
 };
 
 export default Home;
