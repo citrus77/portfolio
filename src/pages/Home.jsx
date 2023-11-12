@@ -1,7 +1,10 @@
 import './css/Home.css';
 import profilePic from '../assets/img/profile.jpg';
 
-const Home = () => {
+const Home = ({ setBgColor1, setBgColor2 }) => {
+    setBgColor1('#bfffbc');
+    setBgColor2('#00bee1');
+    
     return <>
         <div id='home'>
             <div className='card'>

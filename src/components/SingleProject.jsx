@@ -1,6 +1,5 @@
 const SingleProject = ({ projectData }) => {
     const {contributors, description, github, imgUrl, project, url } = projectData;
-    console.log(imgUrl)
 
     return (
         <div className='project'>
