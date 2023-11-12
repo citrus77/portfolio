@@ -1,10 +1,19 @@
+import { useLayoutEffect } from 'react';
 import './css/Home.css';
+import './css/card.css';
 import profilePic from '../assets/img/profile.jpg';
+import { useLoaderData } from 'react-router';
 
-const Home = ({ setBgColor1, setBgColor2 }) => {
-    setBgColor1('#bfffbc');
-    setBgColor2('#00bee1');
-    
+const Home = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
+    useLayoutEffect(() => {
+        setBgColor1('#bfffbc');
+        setBgColor2('#00bee1');        
+    }, [bgColor1]);
+
+    useLayoutEffect(() => {
+        setPathName('Home');
+    }, []);
+
     return <>
         <div id='home'>
             <div className='card'>

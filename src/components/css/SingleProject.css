@@ -1,0 +1,17 @@
+.project {    
+    margin: 6px;
+    padding: 6px;
+    padding-bottom: 8px;
+    text-align: justify;
+}
+
+.project h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.project img {
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

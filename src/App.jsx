@@ -20,13 +20,13 @@ const App = () => {
     <div
       id='app'
       style={{
-        background: `linear-gradient(100deg, ${bgColor1} 5%, ${bgColor2} 95%`,
+        background: `linear-gradient(to right, ${bgColor1}, ${bgColor2}`,
       }}
     >
       <Header setPathName={setPathName} pathName={pathName} toggle={toggle} />
       <Routes>
-        <Route exact path='/' element={ <Home setBgColor1={setBgColor1} setBgColor2={setBgColor2}/> } />
-        <Route exact path='/projects' element={ <Projects setBgColor1={setBgColor1} setBgColor2={setBgColor2}/> } />
+        <Route exact path='/' element={ <Home bgColor1={bgColor1} setBgColor1={setBgColor1} setBgColor2={setBgColor2} setPathName={setPathName}/> } />
+        <Route exact path='/projects' element={ <Projects bgColor1={bgColor1} setBgColor1={setBgColor1} setBgColor2={setBgColor2} setPathName={setPathName}/> } />
       </Routes>
     </div>
   );

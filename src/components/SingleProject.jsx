@@ -1,8 +1,10 @@
+import './css/SingleProject.css';
+
 const SingleProject = ({ projectData }) => {
     const {contributors, description, github, imgUrl, project, url } = projectData;
 
     return (
-        <div className='project'>
+        <div className='project card'>
             <h3>
                 <span>
                     <a href={url} target='_project'>{project}</a>
