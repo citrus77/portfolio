@@ -1,5 +1,5 @@
 import { useLayoutEffect } from 'react';
-import { SingleEdu, SingleSkill } from '../components';
+import { SingleEdu, SingleSkill } from './components';
 import dataFns from '../dataFns';
 import './css/About.css';
 

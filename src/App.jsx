@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Header } from './components';
+import { Header } from './pages/components';
 import { About, Contact, Home, Projects } from './pages'
 import { Route, Routes } from 'react-router-dom';
 import './App.css';

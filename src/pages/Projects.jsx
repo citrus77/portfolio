@@ -1,5 +1,5 @@
 import { useLayoutEffect } from 'react';
-import { SingleProject } from '../components';
+import { SingleProject } from './components';
 import dataFns from '../dataFns';
 import './css/Projects.css';
 
