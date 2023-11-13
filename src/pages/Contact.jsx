@@ -4,7 +4,7 @@ import './css/Contact.css';
 
 const Contact = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     useLayoutEffect(() => {
-        setBgColor1('#d5194e');
+        setBgColor1('#ff0048');
         setBgColor2('#f69c47');
     }, [bgColor1]);
 

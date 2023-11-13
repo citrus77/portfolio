@@ -6,7 +6,7 @@ import './css/About.css';
 const About = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     useLayoutEffect(() => {
         setBgColor1('#b49fff');
-        setBgColor2('#d5194e');
+        setBgColor2('#ff0048');
     }, [bgColor1]);
 
     useLayoutEffect(() => {
