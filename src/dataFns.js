@@ -3,37 +3,37 @@ const skills = [
     {
         id: 1,
         name: 'HTML',
-        imgSrc: '../src/assets/img/html.png'
+        imgSrc: './assets/img/html.png'
     },
     {
         id: 2,
         name: 'CSS',
-        imgSrc: '../src/assets/img/css.png'
+        imgSrc: './assets/img/css.png'
     },
     {
         id: 3,
         name: 'JavaScript',
-        imgSrc: '../src/assets/img/js.png'
+        imgSrc: './assets/img/js.png'
     },
     {
         id: 4,
         name: 'Node.js',
-        imgSrc: '../src/assets/img/node.png'
+        imgSrc: './assets/img/node.png'
     },
     {
         id: 5,
         name: 'React',
-        imgSrc: '../src/assets/img/react.png'
+        imgSrc: './assets/img/react.png'
     },
     {
         id: 6,
         name: 'PostgreSQL',
-        imgSrc: '../src/assets/img/elephant.png'
+        imgSrc: './assets/img/elephant.png'
     },
     {
         id: 7,
         name: 'Playwright',
-        imgSrc: '../src/assets/img/playwright.svg'
+        imgSrc: './assets/img/playwright.svg'
     }
 ]
 
@@ -46,7 +46,7 @@ const projects = [
     {
         id: 1,
         project: 'Connect-Four',
-        imgSrc: '../src/assets/img/screenshots/connectfour.png',
+        imgSrc: './assets/img/screenshots/connectfour.png',
         url: 'https://elegant-jones-1aa5f1.netlify.app/',
         github: 'https://github.com/citrus77/connect-four',
         contributors: [
@@ -61,7 +61,7 @@ const projects = [
     {
         id: 2,
         project: `Stranger's Things`,
-        imgSrc: '../src/assets/img/screenshots/strangersthings.png',
+        imgSrc: './assets/img/screenshots/strangersthings.png',
         url: 'https://stoic-raman-95405a.netlify.app/',
         github: 'https://github.com/citrus77/Strangers.Things.Project.git',
         contributors: [
@@ -76,7 +76,7 @@ const projects = [
     {
         id: 3,
         project: `Awesome Shoe Store`,
-        imgSrc: '../src/assets/img/screenshots/awesomeshoestore.png',
+        imgSrc: './assets/img/screenshots/awesomeshoestore.png',
         url: 'https://joyful-nodes.herokuapp.com/',
         github: 'https://github.com/2105-SJS/joyful-nodes',
         contributors: [
@@ -128,7 +128,7 @@ const education = [
         endMonth: 'November',
         endYear: '2021',
         description: 'Certificate in Web Development- Powered by Fullstack Academy. Rigorous coding bootcamp focused on fullstack development. Emphasis on paired programming in an agile environment.',
-        logoSrc: '../src/assets/img/hanover-square-logo.png'
+        logoSrc: './assets/img/hanover-square-logo.png'
     }
 ];
 

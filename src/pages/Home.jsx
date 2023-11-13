@@ -15,7 +15,7 @@ const Home = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     return (
         <div id='home'>
             <div className='card'>
-                <img src='../src/assets/img/profile.jpg' className='profile-pic' height='300' width='300' />
+                <img src='./assets/img/profile.jpg' className='profile-pic' height='300' width='300' />
                 <span>Hello! I am a Software Engineer specializing in Full-Stack Web Development. Check out my portfolio for some examples of my projects!</span>
             </div>
         </div>
