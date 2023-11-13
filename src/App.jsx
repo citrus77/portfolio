@@ -14,6 +14,7 @@ const App = () => {
   const toggle = () => {
     setMenuOpen(!menuOpen);
     document.getElementById('menu').classList.toggle('hidden');
+    document.getElementById('menuBtn').classList.toggle('open');
   };
 
   return (

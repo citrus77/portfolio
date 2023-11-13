@@ -16,3 +16,7 @@
     width: 8rem;
     z-index: 1;
 }
+
+.open {
+    opacity: 0;
+}

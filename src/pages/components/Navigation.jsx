@@ -11,7 +11,7 @@ const Navigation = ({ setPathName, pathName, toggle }) => {
 
     return (
         <div id='navigation'>
-            <button onClick={toggle}>{pathName} ⇣</button>
+            <button onClick={toggle} id='menuBtn'>{pathName} ⇣</button>
             <Menu links={links} setPathName={setPathName} toggle={toggle} />
         </div>
     );
