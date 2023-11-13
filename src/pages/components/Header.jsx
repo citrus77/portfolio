@@ -11,7 +11,13 @@ const Header = ({ bgColor1, bgColor2, setPathName, pathName, toggle }) => {
                     1px 1px 0px ${bgColor1}`
                 }
             }>Jason Lammers</h1>
-            <Navigation setPathName={setPathName} pathName={pathName} toggle={toggle} />
+            <Navigation
+                bgColor1={bgColor1}
+                bgColor2={bgColor2}
+                setPathName={setPathName}
+                pathName={pathName}
+                toggle={toggle}
+            />
         </header>
     );
 };

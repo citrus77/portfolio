@@ -1,7 +1,7 @@
 import { Menu } from '.';
 import './css/Navigation.css';
 
-const Navigation = ({ setPathName, pathName, toggle }) => {
+const Navigation = ({ bgColor1, bgColor2, setPathName, pathName, toggle }) => {
     const links = [
         { name: 'Home', to: '/' },
         { name: 'Projects', to: '/projects' },
@@ -12,7 +12,13 @@ const Navigation = ({ setPathName, pathName, toggle }) => {
     return (
         <div id='navigation'>
             <button onClick={toggle} id='menuBtn'>{pathName} ⇣</button>
-            <Menu links={links} setPathName={setPathName} toggle={toggle} />
+            <Menu
+                bgColor1={bgColor1}
+                bgColor2={bgColor2}
+                links={links}
+                setPathName={setPathName}
+                toggle={toggle}
+            />
         </div>
     );
 };

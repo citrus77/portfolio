@@ -2,10 +2,17 @@
 import { MenuItem } from '.';
 import './css/Menu.css';
 
-const Menu = ({ links, setPathName, toggle }) => {
+const Menu = ({ bgColor1, bgColor2, links, setPathName, toggle }) => {
 
     return (
-        <div id='menu' className='hidden'>
+        <div
+            id='menu'
+            className='hidden'
+            style={
+                {
+                    background: `${bgColor2} `
+                }
+            }>
             {
                 links && links.map(link => <MenuItem key={link.name} link={link} setPathName={setPathName} toggle={toggle} />)
             }
