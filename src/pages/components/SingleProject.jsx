@@ -1,6 +1,9 @@
 import './css/SingleProject.css';
 
+import PropTypes from 'prop-types';
+
 const SingleProject = ({ projectData }) => {
+
     const {contributors, description, github, imgSrc, project, url } = projectData;
 
     return (
@@ -36,6 +39,10 @@ const SingleProject = ({ projectData }) => {
             </div>
         </div>
     );
+};
+
+SingleProject.propTypes = {
+    projectData: PropTypes.object.isRequired
 };
 
 export default SingleProject;

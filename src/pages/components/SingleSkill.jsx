@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './css/SingleSkill.css';
 
 const SingleSkill = ({ skill }) => {
@@ -7,6 +8,10 @@ const SingleSkill = ({ skill }) => {
             <div>{skill.name}</div>
         </div>
     );
+};
+
+SingleSkill.propTypes = {
+    skill: PropTypes.object.isRequired,
 };
 
 export default SingleSkill;

@@ -1,9 +1,9 @@
-/* eslint-disable react/prop-types */
 import { MenuItem } from '.';
 import './css/Menu.css';
 
-const Menu = ({ bgColor2, links, setPathName, toggle }) => {
+import PropTypes from 'prop-types';
 
+const Menu = ({ bgColor2, links, setPathName, toggle }) => {
     return (
         <div
             id='menu'
@@ -23,6 +23,13 @@ const Menu = ({ bgColor2, links, setPathName, toggle }) => {
             }
         </div>
     );
+};
+
+Menu.propTypes = {
+    bgColor2: PropTypes.string,
+    links: PropTypes.array,
+    setPathName: PropTypes.func,
+    toggle: PropTypes.func,
 };
 
 export default Menu;

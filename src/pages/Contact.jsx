@@ -2,15 +2,17 @@ import { useLayoutEffect } from 'react';
 import dataFns from '../dataFns';
 import './css/Contact.css';
 
+import PropTypes from 'prop-types';
+
 const Contact = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
     useLayoutEffect(() => {
         setBgColor1('#ff0048');
         setBgColor2('#f69c47');
-    }, [bgColor1]);
+    }, [bgColor1, setBgColor1, setBgColor2]);
 
     useLayoutEffect(() => {
         setPathName('Contact');
-    }, []);
+    }, [setPathName]);
 
     const { getAboutMe } = dataFns;
     const { email, linkedIn, github, resumeLnk } = getAboutMe();
@@ -39,6 +41,13 @@ const Contact = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
             </div>
         </div>
     );
+};
+
+Contact.propTypes = {
+    bgColor1: PropTypes.string.isRequired,
+    setBgColor1: PropTypes.func.isRequired,
+    setBgColor2: PropTypes.func.isRequired,
+    setPathName: PropTypes.func.isRequired,
 };
 
 export default Contact;

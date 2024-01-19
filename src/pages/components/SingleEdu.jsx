@@ -1,4 +1,4 @@
-import './css/SingleEdu.css';
+import PropTypes from 'prop-types';
 
 const SingleEdu = ({ edu }) => {
     const {
@@ -24,6 +24,19 @@ const SingleEdu = ({ edu }) => {
             <p className='description'>{description}</p>
         </div>
     );
+};
+
+SingleEdu.propTypes = {
+    edu: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        location: PropTypes.string.isRequired,
+        startMonth: PropTypes.string.isRequired,
+        startYear: PropTypes.number.isRequired,
+        endMonth: PropTypes.string.isRequired,
+        endYear: PropTypes.number.isRequired,
+        description: PropTypes.string.isRequired,
+        logoSrc: PropTypes.string.isRequired
+    }).isRequired
 };
 
 export default SingleEdu;

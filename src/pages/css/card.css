@@ -11,14 +11,40 @@
 }
 
 .card img {
-    flex: 9;
+    flex: 8;
     object-fit: cover;
     width: 100%;
 }
 
-.card span {
+.card div {
     align-items: center;
     flex: 1;
-    padding: 6px;
+    padding: 12px;
     text-align: justify;
+}
+
+.card div p {
+    padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        height: 600px;
+        width: 85%;
+    }
+
+    .card img {
+        flex: 1;
+        height: 100%;
+        width: 60%;
+    }
+
+    .card div {
+        color: #000000d7;
+        flex: 8;
+        padding: 6px;
+        text-align: justify;
+    }
+    
 }
