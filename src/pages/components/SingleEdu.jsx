@@ -31,9 +31,9 @@ SingleEdu.propTypes = {
         name: PropTypes.string.isRequired,
         location: PropTypes.string.isRequired,
         startMonth: PropTypes.string.isRequired,
-        startYear: PropTypes.number.isRequired,
+        startYear: PropTypes.string.isRequired,
         endMonth: PropTypes.string.isRequired,
-        endYear: PropTypes.number.isRequired,
+        endYear: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         logoSrc: PropTypes.string.isRequired
     }).isRequired

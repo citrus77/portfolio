@@ -11,40 +11,39 @@
 }
 
 .card img {
-    flex: 8;
+    flex: 9;
     object-fit: cover;
     width: 100%;
 }
 
-.card div {
+.card span {
     align-items: center;
     flex: 1;
-    padding: 12px;
+    padding: 6px;
     text-align: justify;
 }
 
-.card div p {
+.card p {
     padding: 8px;
 }
 
 @media screen and (min-width: 768px) {
-    .card {
+    #intro {
         flex-direction: row;
         height: 600px;
         width: 85%;
     }
 
-    .card img {
+    #intro img {
         flex: 1;
         height: 100%;
-        width: 60%;
+        width: 65%;
     }
 
-    .card div {
-        color: #000000d7;
-        flex: 8;
+    #intro div {
+        align-self: flex-start;
+        flex: 1;
         padding: 6px;
         text-align: justify;
     }
-    
 }
