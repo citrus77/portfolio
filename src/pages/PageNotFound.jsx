@@ -4,8 +4,8 @@ import { useLayoutEffect } from 'react';
 
 const PageNotFound = ({ bgColor1, setBgColor1, setBgColor2, setPathName }) => {
   useLayoutEffect(() => {
-    setBgColor1('#00bee1');
-    setBgColor2('#b49fff');        
+    setBgColor1('#ff3d3d');
+    setBgColor2('#ff9f9f');        
 }, [bgColor1]);
 
 useLayoutEffect(() => {
