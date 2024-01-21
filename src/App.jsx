@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Header } from './pages/components';
-import { About, Contact, Home, Projects } from './pages'
+import { About, Contact, Home, PageNotFound, Projects } from './pages'
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
@@ -74,6 +74,15 @@ const App = () => {
           />}
         />
 
+        <Route
+          path='*'
+          element={<PageNotFound
+            bgColor1={bgColor1}
+            setBgColor1={setBgColor1}
+            setBgColor2={setBgColor2}
+            setPathName={setPathName}
+          />}
+        />
       </Routes>
     </div>
   );
